@@ -6,4 +6,4 @@ console.log(title); // <h1>sayyyho</h1>
 const titles = document.querySelectorAll(".title h1")
 console.log(titles);
 title.innerHTML = "S"
-titles[1].innerHTML = "h"
+titles[1].innerHTML = "h"``

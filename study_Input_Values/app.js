@@ -1,7 +1,7 @@
 const loginForm = document.querySelector(".login-form");
 const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
-
+const user = document.querySelector("#greeting");
 
 // input을 form 태그로 묶었을 때 필요 없어지는 부분.
 // 근데 form으로 묶었을 때 submit type이나 button을 클릭 할 때 
@@ -21,10 +21,17 @@ const loginButton = loginForm.querySelector("button");
 // }
 // loginButton.addEventListener("click", buttonClick);
 
+const HIDDEN_CLASS = "hidden";
+
 function onSubmit(event){ //event 변수는 관행적으로 이렇게 명명하며,
     // 만약에 존재하면 방금 일어났던 정보를 받겠다는 것이고 알아서 정보가 들어옴. 
     event.preventDefault(); // 어떤 event의 기본 행동을 막는 부분. 기본 제공 함수.
-    console.log(loginInput.value);
+   // 원래 실행 되어야 하는 브라우저의 일을 막음(새로운 링크로 이동이 안됨)
+    const username = loginInput.value;
+    loginForm.classList.add(HIDDEN_CLASS);
+    user.innerHTML = `Hello ${username}`;
+    user.classList.remove(HIDDEN_CLASS);
 }
 
-loginForm.addEventListener("submit", onSubmit);
+
+loginForm.addEventListener("submit", onSubmit); // 2번째 인자인 함수명을 주면 js가 알아서 함수 실행을 해줌 // 그 증거로 함수내에서 변수를 하나 추가하면 정보에 관한 오브젝트를 받을 수 있음

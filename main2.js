@@ -1,4 +1,4 @@
-const wordClick = document.querySelector(".title:first-child h1");
+/* const wordClick = document.querySelector(".title:first-child h1");
 
 function handleTitleClick(){
     console.log("now touch");
@@ -38,3 +38,4 @@ window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
 window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
+*/

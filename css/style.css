@@ -1,3 +1,71 @@
 .hidden {
     display: none;
 }
+
+body{
+    text-align: center;
+    margin-top: 10px; 
+    height: 100vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+.clock{
+    flex-grow: 2;
+}
+#clock{
+    font-size: 60px;
+    margin: 0;
+    flex-grow: 2;
+}
+#weather{
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+}
+
+.login{
+    flex-grow: 3;
+}
+
+.todo{
+    flex-grow: 3
+}
+
+#quote{
+    flex-grow: 1;
+}
+
+ul{
+    list-style:none;
+    padding-left: 0;
+}
+#input-todo{
+    padding: 0;
+    margin : 0;
+    border-bottom: 1;
+    border-top : 0;
+    border-left : 0;
+    border-right: 0;
+    border-color: whitesmoke;
+    background-color: transparent;
+    color: white;
+}
+input::placeholder{
+    color : white;
+    text-align: center;
+}
+#input-name{
+    padding: 0;
+    margin : 0;
+    border-bottom: 1;
+    border-top : 0;
+    border-left : 0;
+    border-right: 0;
+    border-color: whitesmoke;
+    background-color: transparent;
+    color: white;
+}

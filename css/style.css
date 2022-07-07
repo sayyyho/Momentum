@@ -35,6 +35,7 @@ body{
     margin: 3px;
 }
 
+
 .login{
     flex-grow: 3;
 }
@@ -69,7 +70,7 @@ input::placeholder{
     font-size: 17px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#input-name{
+#login-form input{
     padding: 0;
     margin : 0;
     border-bottom: 1;
@@ -79,6 +80,10 @@ input::placeholder{
     border-color: whitesmoke;
     background-color: transparent;
     color: white;
+}
+
+#login-button{
+    border-bottom: 0;
 }
 
 #todo-list li span{

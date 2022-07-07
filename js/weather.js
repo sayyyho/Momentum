@@ -8,6 +8,7 @@ function onGeoOk(position){
         const weather = document.querySelector("#weather span:last-child");
         city.innerHTML =  data.name;
         weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        console.log(data.weather[0].main);
     }); //network 상에서 확인, promise임 시간걸림 
 }
 

@@ -22,7 +22,7 @@ function paintTodo(newTodobj){
     const span = document.createElement("span");
     span.innerText = newTodobj.text;
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "✔️";
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
     li.append(button);

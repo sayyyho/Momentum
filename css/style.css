@@ -3,6 +3,7 @@
 }
 
 body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-top: 10px; 
     height: 100vh;
@@ -15,6 +16,9 @@ body{
 }
 .clock{
     flex-grow: 2;
+}
+#greeting{
+    font-size: 40px;
 }
 #clock{
     font-size: 60px;
@@ -57,6 +61,9 @@ ul{
 input::placeholder{
     color : white;
     text-align: center;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #input-name{
     padding: 0;
@@ -68,4 +75,14 @@ input::placeholder{
     border-color: whitesmoke;
     background-color: transparent;
     color: white;
+}
+
+#todo-list li span{
+    margin-right: 5px;
+}
+
+#todo-list li button{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
 }

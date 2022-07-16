@@ -25,6 +25,21 @@ body{
     margin: 0;
     flex-grow: 2;
 }
+
+#heading{
+    display: flex;
+    margin-left: 10px;
+    flex-grow: 2;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 #weather{
     display: flex;
     flex-grow: 1;
@@ -32,6 +47,7 @@ body{
 }
 
 #weather span{
+    padding-top: 7px;
     margin: 3px;
 }
 
@@ -53,6 +69,7 @@ ul{
     padding-left: 0;
 }
 #input-todo{
+    size: 40;
     padding: 0;
     margin : 0;
     border-bottom: 1;
@@ -62,12 +79,15 @@ ul{
     border-color: whitesmoke;
     background-color: transparent;
     color: white;
+    width: 215px;
 }
+
+
 input::placeholder{
     color : white;
     text-align: center;
     padding-bottom: 5px;
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #login-form input{
